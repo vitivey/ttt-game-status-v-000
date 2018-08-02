@@ -60,9 +60,8 @@ def over?(board)
 end
 
 def winner(board)
-  puts board[won?(board)[0]]
-  if won?(board) == !false
-    board[won?(board)[0]]
+  if board[won?(board)[0]] == "X"
+    "X"
   else
     nil
   end

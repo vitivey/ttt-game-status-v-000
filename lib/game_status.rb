@@ -24,4 +24,5 @@ def won?(board)
       position_indices << i
     end
     i=+1
+  end
 end

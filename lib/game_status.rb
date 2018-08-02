@@ -29,7 +29,6 @@ def won?(board)
     else
       false
     end
+    winning_combination
   end
-  winning_combination
-  puts winning_combination
 end

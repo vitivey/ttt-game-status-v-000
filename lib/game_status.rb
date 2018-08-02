@@ -36,8 +36,8 @@ def won?(board)
     if "#{position}" == "X" #|| "#{postion}" == "O"
       position_indices << i
       puts "Position: #{position_indices}"
-    end
-    i=+1
+      i=+1
+    end    
   end
   position_indices.include?(board)
 end

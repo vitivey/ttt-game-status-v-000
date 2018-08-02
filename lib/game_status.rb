@@ -17,8 +17,7 @@ WIN_COMBINATIONS = [
 WIN_COMBINATIONS
 board = [2,3,6,7,8]
 def won?(board)
-  if position_taken?(board, index)
-  WIN_COMBINATIONS.each do |win_option|
+    WIN_COMBINATIONS.each do |win_option|
     win_index_1 = win_option[0]
     win_index_2 = win_option[1]
     win_index_3 = win_option[2]
@@ -30,4 +29,3 @@ def won?(board)
     end
   end
 end
-

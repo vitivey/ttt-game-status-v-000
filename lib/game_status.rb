@@ -30,5 +30,7 @@ def won?(board)
       false
     end
   end
-  winning_combination
+  if winning_combination == nil
+    false
+  else winning_combination
 end

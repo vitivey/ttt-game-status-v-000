@@ -42,3 +42,7 @@ end
 def full?(board)
   !board.include?(nil) && !board.include?(" ") && !board.include?("")
 end
+
+def draw?(board)
+
+end

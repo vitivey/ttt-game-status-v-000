@@ -21,9 +21,8 @@ def won?(board)
     win_index_1 = win_option[0]
     win_index_2 = win_option[1]
     win_index_3 = win_option[2]
-    puts "#{win_option}"
     if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
-      win_option
+      return win_option
     else
       false
     end

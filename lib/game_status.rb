@@ -26,11 +26,14 @@ def won?(board)
     if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
       winning_combination = [win_index_1, win_index_2, win_index_3]
       winning_combination
+    elsif board[win_index_1] == "O" && board[win_index_2] == "O" && board[win_index_3] == "O"
+        winning_combination = [win_index_1, win_index_2, win_index_3]
+        winning_combination
     else
       false
     end
   end
-  if winning_combination != nil || winning_combination != []
+  if winning_combination != []
     winning_combination
   else false
   end

@@ -33,4 +33,5 @@ def won?(board)
   if winning_combination != nil || winning_combination != []
     winning_combination
   else false
+  end
 end

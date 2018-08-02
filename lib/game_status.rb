@@ -25,4 +25,5 @@ def won?(board)
     end
     i=+1
   end
+  position_indices.any? WIN_COMBINATIONS
 end

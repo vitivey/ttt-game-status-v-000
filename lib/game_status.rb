@@ -58,3 +58,11 @@ def over?(board)
     true
   end
 end
+
+def winner(board)
+  if won?(board)
+  else
+    nil
+
+  end
+end

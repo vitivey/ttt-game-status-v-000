@@ -39,8 +39,5 @@ def won?(board)
     end
     i=+1
   end
-  position_indices.include?(WIN_COMBINATIONS)
+  position_indices.include?(1,2,5,4,7)
 end
-
-
-

@@ -15,16 +15,24 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 WIN_COMBINATIONS
-
+board = [2,3,6,7,8]
 def won?(board)
   WIN_COMBINATIONS.each do |win_option|
     win_index_1 = win_option[0]
     win_index_2 = win_option[1]
     win_index_3 = win_option[2]
+    puts win_option
     if board[win_index_1] == "X" && board[win_index_2] == "X" && board[win_index_3] == "X"
       win_option
     else
       false
     end
   end
+end
+
+
+def won?
+  WIN_COMBINATIONS.each do |win_option|
+    puts win_option
+    end
 end

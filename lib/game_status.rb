@@ -20,10 +20,27 @@ def won?(board)
   position_indices=[]
   i = 0
   board.each do |postion|
-    if "#{position}" == "X" || "#{postion}" == "O"
+    if "#{position}" == "X" #|| "#{postion}" == "O"
       position_indices << i
     end
     i=+1
   end
-  position_indices.any? WIN_COMBINATIONS
+  position_indices.include?(WIN_COMBINATIONS)
 end
+
+board=[1,2,5,4,7]
+def won?(board)
+  position_indices=[]
+  i = 0
+  board.each do |postion|
+    if "#{position}" == "X" #|| "#{postion}" == "O"
+      position_indices << i
+      puts "Position: #{position_indices}"
+    end
+    i=+1
+  end
+  position_indices.include?(WIN_COMBINATIONS)
+end
+
+
+

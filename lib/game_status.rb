@@ -17,6 +17,11 @@ WIN_COMBINATIONS = [
 WIN_COMBINATIONS
 
 def won?(board)
-  if board.nil?
-    false
+  position_indices=[]
+  i = 0
+  board.each do |postion|
+    if "#{position}" == "X" || "#{postion}" == "O"
+      position_indices << i
+    end
+    i=+1
 end

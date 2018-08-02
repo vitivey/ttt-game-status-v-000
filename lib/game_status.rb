@@ -28,7 +28,7 @@ def won?(board)
   position_indices.include?(WIN_COMBINATIONS)
 end
 
-board=[1,2,5,4,7]
+board=[0,1,2]
 def won?(board)
   position_indices=[]
   i = 0
@@ -39,5 +39,5 @@ def won?(board)
     end
     i=+1
   end
-  position_indices.include?(1,2,8,4,7)
+  position_indices.include?(board)
 end

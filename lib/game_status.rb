@@ -19,7 +19,7 @@ WIN_COMBINATIONS
 def won?(board)
   position_indices=[]
   i = 0
-  board.each do |postion|
+  board.each do |position|
     if "#{position}" == "X" #|| "#{postion}" == "O"
       position_indices << i
     end
@@ -32,7 +32,7 @@ board=[1,2,5,4,7]
 def won?(board)
   position_indices=[]
   i = 0
-  board.each do |postion|
+  board.each do |position|
     if "#{position}" == "X" #|| "#{postion}" == "O"
       position_indices << i
       puts "Position: #{position_indices}"
